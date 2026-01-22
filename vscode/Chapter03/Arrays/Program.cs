@@ -1,4 +1,13 @@
-﻿string[] names; // can reference any size array of strings
+﻿using static System.Console;
+Console.WriteLine("Herby Francois");
+Console.WriteLine("Version: {0}", Environment.Version.ToString());
+string[] names; // can reference any size array of strings
+
+
+
+
+
+
 
 // allocating memory for four strings in an array
 names = new string[4];
@@ -9,7 +18,7 @@ names[1] = "Jack";
 names[2] = "Rebecca";
 names[3] = "Tom";
 
-string[] names2 = new[] { "Kate", "Jack", "Rebecca", "Tom" };
+string[] names2 = new[] { "Herby", "Kate", "Jack", "Rebecca", "Tom" };
 
 // looping through the names
 for (int i = 0; i < names2.Length; i++)
@@ -39,7 +48,7 @@ for (int row = 0; row <= grid1.GetUpperBound(0); row++)
 }
 
 // alternative syntax
-string[,] grid2 = new string[3,4]; // allocate memory
+string[,] grid2 = new string[3, 4]; // allocate memory
 grid2[0, 0] = "Alpha"; // assign string values
 // and so on
 grid2[2, 3] = "Dog";
@@ -97,7 +106,7 @@ static string CheckSwitch(int[] values) => values switch
   [1, 2, _, 10] => "Contains 1, 2, any single number, 10.",
   [1, 2, .., 10] => "Contains 1, 2, any range including empty, 10.",
   [1, 2] => "Contains 1 then 2.",
-  [int item1, int item2, int item3] => 
+  [int item1, int item2, int item3] =>
     $"Contains {item1} then {item2} then {item3}.",
   [0, _] => "Starts with 0, then one other number.",
   [0, ..] => "Starts with 0, then any range of numbers.",
