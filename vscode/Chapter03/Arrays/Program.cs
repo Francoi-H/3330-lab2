@@ -8,7 +8,6 @@ string[] names; // can reference any size array of strings
 
 
 
-
 // allocating memory for four strings in an array
 names = new string[4];
 
